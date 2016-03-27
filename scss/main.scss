@@ -37,14 +37,17 @@ html {
   background-size: cover;
 }
 
-
-
+h1 {
+  padding-top: 5em;
+}
 /* curtains */
 #curtains {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,.7) url(../img/curtains.png) repeat top left;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.7) url(../images/curtains.png) repeat top left;
   z-index: -1;
 }
 
