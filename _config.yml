@@ -6,16 +6,25 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Valentina Project
+description: Valentina is an open source pattern drafting software tool, designed to be the foundation of a new stack of open source tools to remake the garment industry.
 baseurl: "" # the subpath of your site, e.g. /blog
+
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+keywords: ['pattern making', 'open fashion']
+
+googleAnalytics:
+# sns
+github: valentina
+email: contact@valentina-project.org
+twitter: valentina
+
 
 # Build settings
 markdown: kramdown
+encoding: utf-8
+exclude: [README.md, LICENSE, CNAME]
+
+sass:
+  sass_dir: scss

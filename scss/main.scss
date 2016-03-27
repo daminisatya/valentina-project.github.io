@@ -1,0 +1,97 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+$text-color: #FFF;
+$link-color : steelblue;
+$link-color-hover : green;
+
+$btn-color: steelblue;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "typo",
+        "header",
+        "footer"
+;
+
+
+body{
+	// background: url("../images/simple_dashed.png");
+	// overflow-x: hidden;
+  color:$text-color;
+}
+
+html {
+  background: url(../images/manual_pattern_making.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/* curtains */
+#curtains {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.7) url(../img/curtains.png) repeat top left;
+  z-index: -1;
+}
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+$blurb-img-size:100px;
+
+#team {
+	margin-top: 2em;
+	text-align: center;
+
+	.blurb {
+	  margin-bottom: 1em;
+
+	  img{
+	    max-height:$blurb-img-size;
+	    max-width:$blurb-img-size;
+	  }
+
+		canvas {
+			 -webkit-filter:invert(100%);
+			 filter: invert(1);
+			 filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+	 }
+	}
+}
+
+.circular {
+	width: $blurb-img-size;
+	height: $blurb-img-size;;
+  border-radius: $blurb-img-size;
+  -webkit-border-radius: $blurb-img-size;
+  -moz-border-radius: $blurb-img-size;
+}
