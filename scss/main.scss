@@ -37,8 +37,17 @@ html {
   background-size: cover;
 }
 
-h1 {
-  padding-top: 5em;
+.jumbotron {
+  padding: 7em 0;
+  text-align: center;
+  .logo  {
+    padding: 2em 0;
+  }
+  h3 {
+    padding-bottom: 1em;
+  }
+
+
 }
 /* curtains */
 #curtains {
