@@ -107,3 +107,25 @@ $blurb-img-size:100px;
   -webkit-border-radius: $blurb-img-size;
   -moz-border-radius: $blurb-img-size;
 }
+
+
+#downloads {
+  list-style: none;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  li {
+    padding : .5em 1em;
+    display: inline-block;
+    a.button {
+      // padding: 5px 6px 5px 30px;
+      &> img {
+        vertical-align: middle;
+        padding-right: 5px
+      }
+
+    }
+  }
+
+}

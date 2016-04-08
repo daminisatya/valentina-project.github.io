@@ -1,6 +1,74 @@
-<div class="subscribe">
-  <a class="button button-primary button-download" href="http://valentinaproject.bitbucket.org/">Download</a>
-  <a class="button" href="#docs">Read the Docs</a>
-  <p>v0.4.3 - <a href="http://valentinaproject.bitbucket.org/index.html#source">Release notes</a></p>
+<div class="download-zone">
+
+  <p class="download">
+    <a class="button button-primary" src="{{site.data.downloads.downloads[0].url}}">Download</a>
+    <br>
+    <span id="currentDownload">{{site.data.downloads.downloads[0].title}}</span>
+    <br>
+    <a class="more-downloads" href="http://valentinaproject.bitbucket.org/index.html#current_release">More Downloads</a>
+  </p>
+
+  <ul id="downloads">
+    {% for download in site.data.downloads.downloads %}
+      <li class="{{download.type}}">
+        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
+          <img src="/images/logos/{{download.image}}" alt="{{download.type}}">
+          <span>{{download.title}}</span>
+        </a>
+      </li>
+    {% endfor %}
+    <li>
+      <img src="/images/logos/box.png" alt="others">
+      <a href="http://valentinaproject.bitbucket.org/oldreleases.html">Older Versions</a>
+    </li>
+  </ul>
+
+  <p class="versions">
+    v{{site.valentina_version}}
+
+    - <a href="https://bitbucket.org/dismine/valentina/raw/8ab3d8e61a1f773f9215388898c706747966c96e/ChangeLog.txt">Release notes</a>
+
+  </p>
 
 </div>
+
+<script src="/js/detect-os.js" charset="utf-8"></script>
+<script>
+
+  console.log("OS : ", jscd.os, "version", jscd.osVersion, "is 64 OS : ", is64OS());
+
+  var downloads = {{ site.data.downloads | jsonify }};
+  console.log(downloads);
+
+  var downloadType = undefined;
+  if(jscd.os.indexOf("Windows")>-1) downloadType = "Windows";
+  else if(jscd.os.indexOf("Mac")>-1) downloadType = "Mac";
+  else if(jscd.os.indexOf("Linux")>-1) downloadType = "Linux";
+
+  function is64OS() {
+      return navigator.userAgent.indexOf('WOW64')>-1 || window.navigator.platform=='Win64' || navigator.userAgent.indexOf('x86_64')>-1;
+  };
+
+  $( document ).ready(function() {
+    $("#downloads").hide();
+    $(".more-downloads").click(function(e){
+      e.preventDefault();
+      console.log("clicked");
+      $("#downloads").slideToggle("fast");
+    })
+
+    console.log(downloadType)
+    console.log(downloads)
+
+    downloads.downloads.forEach(function(d){
+      if(d.family == downloadType && downloadType == ("Windows" || "Mac")) {
+        console.log(d)
+      } else {
+        // console.log("linux",d)
+        $(".download").hide();
+        $("#downloads").show();
+      }
+    })
+
+  })
+</script>
