@@ -50,7 +50,6 @@ html {
     padding-bottom: 1em;
   }
 
-
 }
 /* curtains */
 #curtains {
@@ -111,6 +110,9 @@ $blurb-img-size:100px;
   -moz-border-radius: $blurb-img-size;
 }
 
+.homeblock {
+  padding: 2em 0;
+}
 
 #downloads {
   list-style: none;
@@ -146,7 +148,7 @@ $blurb-img-size:100px;
   margin: 0 auto;
   list-style: none;
   width: auto;
-  text-align:center; 
+  text-align:center;
   li {
     display: inline-block;
     padding: 1em;
@@ -156,4 +158,44 @@ $blurb-img-size:100px;
     }
 
   }
+}
+
+#contact {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  a {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+#features {
+
+  img {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  .feature-community {
+    height: 200px;
+  }
+
+  .feature {
+    text-align: center;
+    overflow: hidden;
+
+    h5 {
+      text-transform: capitalize;
+    }
+  }
+  p {
+    font-size: .9em;
+    margin: .6em 0;
+    text-align: justify;
+    line-height: 1.35em;
+  }
+}
+.pp_pic_holder {
+  color:$grey-color-dark  ;
 }

@@ -28,44 +28,8 @@
 
 
 </div>
-
-<script src="/js/detect-os.js" charset="utf-8"></script>
 <script>
-
-  console.log("OS : ", jscd.os, "version", jscd.osVersion, "is 64 OS : ", is64OS());
-
   var downloads = {{ site.data.downloads | jsonify }};
   console.log(downloads);
 
-  var downloadType = undefined;
-  if(jscd.os.indexOf("Windows")>-1) downloadType = "Windows";
-  else if(jscd.os.indexOf("Mac")>-1) downloadType = "Mac";
-  else if(jscd.os.indexOf("Linux")>-1) downloadType = "Linux";
-
-  function is64OS() {
-      return navigator.userAgent.indexOf('WOW64')>-1 || window.navigator.platform=='Win64' || navigator.userAgent.indexOf('x86_64')>-1;
-  };
-
-  $( document ).ready(function() {
-    $("#downloads").hide();
-    $(".more-downloads").click(function(e){
-      e.preventDefault();
-      console.log("clicked");
-      $("#downloads").slideToggle("fast");
-    })
-
-    // console.log(downloadType)
-    // console.log(downloads)
-    //
-    // // downloads.downloads.forEach(function(d){
-    // //   if(d.family == downloadType && downloadType == ("Windows" || "Mac")) {
-    // //     console.log(d)
-    // //   } else {
-    // //     // console.log("linux",d)
-    // //     $(".download").hide();
-    // //     $("#downloads").show();
-    // //   }
-    // // })
-
-  })
 </script>

@@ -16,12 +16,16 @@
   <link rel="stylesheet" href="{{ "/scss/normalize.css" | prepend: site.baseurl }}">
 
   <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ "/scss/prettyPhoto.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/scss/main.css" | prepend: site.baseurl }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js" charset="utf-8"></script>
+  <script src="{{ "/js/jquery.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+  <script src="{{ "/js/jquery.prettyPhoto.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+  <script src="{{ "/js/detect-os.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+  <script src="{{ "/js/main.js" | prepend: site.baseurl }}" charset="utf-8"></script>
 
 </head>
