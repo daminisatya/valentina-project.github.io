@@ -1,6 +1,15 @@
 #footer {
-  border-top: 1px solid $grey-color-dark;
+  background: $valentina-blue;
   padding: 10px;
+  text-align: center;
+
+  .footer-logo {
+    padding-top: 1.5em;
+  }
+
+  #social {
+    padding-top: 1.5em;
+  }
 
   ul {
     list-style: none;
@@ -10,8 +19,5 @@
     }
   }
 
-  h2 {
-    font-size: 22pt;
-    margin-bottom: .1em;
-  }
+
 }

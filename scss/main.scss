@@ -40,13 +40,28 @@ html {
   background-size: cover;
 }
 
-.jumbotron {
+
+.homeblock {
+  padding: 5em 0;
+}
+
+#main {
+  background: white;
+  color: $grey-color-dark;
+}
+
+#jumbotron {
   text-align: center;
+  height:100vh;
+  margin: 0;
+  padding:0;
   .logo  {
-    padding: 2em 0;
+    padding-top: 25%;
   }
   h3 {
     padding-bottom: 1em;
+  }
+  .tagline {
   }
 
 }
@@ -109,10 +124,6 @@ $blurb-img-size:100px;
   -moz-border-radius: $blurb-img-size;
 }
 
-.homeblock {
-  padding: 5em 0;
-
-}
 
 #downloads {
   list-style: none;
@@ -170,12 +181,40 @@ $blurb-img-size:100px;
   }
 }
 
-#features {
 
-  h4 {
+#video {
+
+  .gifffy {
+    margin:0 auto;
+    text-align: center;
+  }
+}
+
+#community {
+
+
+  h3 {
+    color:$valentina-blue;
     margin-bottom: 1em;
     text-align: center;
   }
+
+  .feature-community {
+    text-align: center;
+    padding: 1em;
+    margin-right: 1em;
+
+    background: #fff;
+    border: 2px solid #eee;
+    margin: 2em 0;
+    border-radius: 4px;
+    box-shadow: 0 0 40px #eee;
+
+  }
+
+}
+#features, #community {
+
 
   img {
     max-height: 250px;

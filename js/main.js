@@ -41,5 +41,8 @@ $( document ).ready(function() {
     social_tools: false
   });
 
+  // Gif Player
+  Gifffer();
+
 
 })

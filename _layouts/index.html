@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div id="curtains"></div>
+    <div class="container" id="top">
+        {% include home/jumbotron.html %}
+    </div>
+
+    <div id="main">
+      <div class="container">
+
+        {% include home/features.html %}
+        {% include home/community.html %}
+
+      </div>
+    </div>
+    <div class="container">
+      {% include home/contact.html %}
+      
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
