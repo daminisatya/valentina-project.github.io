@@ -41,7 +41,6 @@ html {
 }
 
 .jumbotron {
-  padding: 7em 0;
   text-align: center;
   .logo  {
     padding: 2em 0;
@@ -111,7 +110,8 @@ $blurb-img-size:100px;
 }
 
 .homeblock {
-  padding: 2em 0;
+  padding: 5em 0;
+
 }
 
 #downloads {
@@ -172,12 +172,20 @@ $blurb-img-size:100px;
 
 #features {
 
+  h4 {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
   img {
     max-height: 250px;
     max-width: 250px;
   }
 
   .feature-community {
+    h5 {
+      font-size: 1.3em;
+    }
     img {
       height: 200px;
     }
@@ -193,8 +201,7 @@ $blurb-img-size:100px;
   }
   p {
     font-size: .9em;
-    margin: .6em 0;
-    text-align: justify;
+    margin: .3em 0;
     line-height: 1.35em;
   }
 }
