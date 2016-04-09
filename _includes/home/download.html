@@ -1,26 +1,21 @@
 <div class="download-zone">
 
   <p class="download">
-    <a class="button button-primary" src="{{site.data.downloads.downloads[0].url}}">Download</a>
+    <a class="more-downloads button button-primary" src="http://valentinaproject.bitbucket.org/index.html#current_release">Download</a>
     <br>
-    <span id="currentDownload">{{site.data.downloads.downloads[0].title}}</span>
-    <br>
-    <a class="more-downloads" href="http://valentinaproject.bitbucket.org/index.html#current_release">More Downloads</a>
+    <!-- <a class="more-downloads" href="">More Downloads</a> -->
   </p>
+
 
   <ul id="downloads">
     {% for download in site.data.downloads.downloads %}
       <li class="{{download.type}}">
         <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
-          <img src="/images/logos/{{download.image}}" alt="{{download.type}}">
+          <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
           <span>{{download.title}}</span>
         </a>
       </li>
     {% endfor %}
-    <li>
-      <img src="/images/logos/box.png" alt="others">
-      <a href="http://valentinaproject.bitbucket.org/oldreleases.html">Older Versions</a>
-    </li>
   </ul>
 
   <p class="versions">
@@ -60,15 +55,15 @@
     console.log(downloadType)
     console.log(downloads)
 
-    downloads.downloads.forEach(function(d){
-      if(d.family == downloadType && downloadType == ("Windows" || "Mac")) {
-        console.log(d)
-      } else {
-        // console.log("linux",d)
-        $(".download").hide();
-        $("#downloads").show();
-      }
-    })
+    // downloads.downloads.forEach(function(d){
+    //   if(d.family == downloadType && downloadType == ("Windows" || "Mac")) {
+    //     console.log(d)
+    //   } else {
+    //     // console.log("linux",d)
+    //     $(".download").hide();
+    //     $("#downloads").show();
+    //   }
+    // })
 
   })
 </script>

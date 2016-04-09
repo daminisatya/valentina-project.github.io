@@ -14,6 +14,8 @@ $link-color-hover : green;
 
 $btn-color: steelblue;
 
+$valentina-blue-light:#737A8C;
+$valentina-blue:#070A2A;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -111,13 +113,22 @@ $blurb-img-size:100px;
 
 #downloads {
   list-style: none;
+
   img {
     width: 24px;
     height: 24px;
   }
+
   li {
     padding : .5em 1em;
     display: inline-block;
+    a.button-download {
+      border:none;
+      &:hover {
+        color : $valentina-blue-light
+      }
+
+    }
     a.button {
       // padding: 5px 6px 5px 30px;
       &> img {

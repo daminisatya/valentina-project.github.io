@@ -56,6 +56,14 @@
       "image": "windows.png",
       "family" : "Windows",
       "bits" : "32/64-bit"
+    },
+    {
+      "type": "Oldies",
+      "url": "http://valentinaproject.bitbucket.org/oldreleases.html",
+      "title": "Older Versions",
+      "image": "box.png",
+      "family" : "Older",
+      "bits" : "32/64-bit"
     }
   ]
 }
