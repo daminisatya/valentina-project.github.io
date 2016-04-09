@@ -178,7 +178,9 @@ $blurb-img-size:100px;
   }
 
   .feature-community {
-    height: 200px;
+    img {
+      height: 200px;
+    }
   }
 
   .feature {
