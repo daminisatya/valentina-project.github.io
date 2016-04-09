@@ -7,6 +7,14 @@
   </p>
 
 
+  <p class="versions">
+    v{{site.valentina_version}}
+
+    - <a href="https://bitbucket.org/dismine/valentina/raw/8ab3d8e61a1f773f9215388898c706747966c96e/ChangeLog.txt">Release notes</a>
+
+  </p>
+
+
   <ul id="downloads">
     {% for download in site.data.downloads.downloads %}
       <li class="{{download.type}}">
@@ -18,12 +26,6 @@
     {% endfor %}
   </ul>
 
-  <p class="versions">
-    v{{site.valentina_version}}
-
-    - <a href="https://bitbucket.org/dismine/valentina/raw/8ab3d8e61a1f773f9215388898c706747966c96e/ChangeLog.txt">Release notes</a>
-
-  </p>
 
 </div>
 
@@ -52,18 +54,18 @@
       $("#downloads").slideToggle("fast");
     })
 
-    console.log(downloadType)
-    console.log(downloads)
-
-    // downloads.downloads.forEach(function(d){
-    //   if(d.family == downloadType && downloadType == ("Windows" || "Mac")) {
-    //     console.log(d)
-    //   } else {
-    //     // console.log("linux",d)
-    //     $(".download").hide();
-    //     $("#downloads").show();
-    //   }
-    // })
+    // console.log(downloadType)
+    // console.log(downloads)
+    //
+    // // downloads.downloads.forEach(function(d){
+    // //   if(d.family == downloadType && downloadType == ("Windows" || "Mac")) {
+    // //     console.log(d)
+    // //   } else {
+    // //     // console.log("linux",d)
+    // //     $(".download").hide();
+    // //     $("#downloads").show();
+    // //   }
+    // // })
 
   })
 </script>

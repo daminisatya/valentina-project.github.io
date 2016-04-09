@@ -8,14 +8,15 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 
+$valentina-blue-light:#737A8C;
+$valentina-blue:#070A2A;
+
 $text-color: #FFF;
 $link-color : steelblue;
-$link-color-hover : green;
+$link-color-hover : $valentina-blue-light;
 
 $btn-color: steelblue;
 
-$valentina-blue-light:#737A8C;
-$valentina-blue:#070A2A;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
