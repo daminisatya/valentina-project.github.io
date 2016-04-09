@@ -4,6 +4,7 @@ title: Home
 ---
 
 {% include home/jumbotron.html %}
+{% include home/socialmedia.html %}
 
 <!-- Valentina has been designed to be the foundation of a new stack of open source tools to remake the garment industry.
 
