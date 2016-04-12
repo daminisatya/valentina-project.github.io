@@ -5,7 +5,7 @@
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.3_64bit-OSX.dmg",
       "image": "macx.png",
       "family" : "Mac",
-      "title": "Mac OS X 10.7 (.dmg)",
+      "title": "Mac OSX (.dmg)",
       "bits" : "64-bit"
     },
     {
@@ -52,7 +52,7 @@
     {
       "type": "Windows",
       "url": "//bitbucket.org/dismine/valentina/downloads/valentina_0.4.3_i386.exe",
-      "title": "Windows XP (.exe)",
+      "title": "Windows (.exe)",
       "image": "windows.png",
       "family" : "Windows",
       "bits" : "32/64-bit"
