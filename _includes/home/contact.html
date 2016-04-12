@@ -1,6 +1,20 @@
 <div id="contact" class="homeblock">
   <small>For questions and inquiries, write to </small>
   <br>
-  <a href="mailto:contact@valentina-project.org">contact@valentina-project.org</a>
-  
+
+  <a id="email-contact">contact<span class="no_display">post @</span>@valentina-project.org</a>
+
+  <script language="JavaScript" type="text/javascript">
+    var u = "contact";
+    var arr = "@";
+    var d = "valentina-project";
+    var dot = ".";
+    var t = "org";
+    var email = u + arr + d + dot + t;
+
+    var element = document.getElementById('email-contact');
+    element.setAttribute("href", "mailto:"+email);
+
+  </script>
+
 </div>
