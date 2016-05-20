@@ -59,16 +59,16 @@
     { 
       "type": "Mac Test Build (v0.5.0a)",
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-2016052017_64bit-OSX.dmg",
-      "image": "macx.png",
+      "title": "Test Mac OSX (.dmg)",      
+      "image": "test.png",
       "family" : "Mac",
-      "title": "Mac OSX (.dmg)",
       "bits" : "64-bit"
     },
     {
       "type": "Windows Test Build (v0.5.0a)",
       "url": "//bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-20160520174517_i386.exe",
-      "title": "Windows (.exe)",
-      "image": "windows.png",
+      "title": "Test Windows (.exe)",
+      "image": "test.png",
       "family" : "Windows",
       "bits" : "32/64-bit"
     },       
