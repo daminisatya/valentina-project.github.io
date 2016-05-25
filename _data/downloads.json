@@ -64,6 +64,14 @@
       "family" : "Mac",
       "bits" : "64-bit"
     },
+        {
+      "type": "Suse",
+      "url": "https://software.opensuse.org/download.html?project=home%3Adismine%3Avalentina-unstable&package=valentina",
+      "title": "Test v0.5.0a OpenSUSE (.rpm)",
+      "image": "test.png",
+      "family" : "Linux",      
+      "bits" : "32/64-bit"
+    },
     {
       "type": "Windows",
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-20160525_i386.exe",
