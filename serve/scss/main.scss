@@ -62,7 +62,18 @@ html {
   }
   .tagline {
   }
-
+  a {
+    color: #000000;
+  }
+  a:link {
+    color: #000000;
+  }
+  a:visited {
+    color: #CC0000;
+  }
+  a:hover {
+    color: #FF3300;
+  }
 }
 /* curtains */
 #curtains {
