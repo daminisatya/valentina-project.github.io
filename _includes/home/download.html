@@ -18,7 +18,7 @@
   <ul id="downloads">
     {% for download in site.data.downloads.downloads %}
       <li class="{{download.type}}">
-        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}" onMouseOver="this.style.color='white'">
+        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
           <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
             
           <span>{{download.title}}</span>
