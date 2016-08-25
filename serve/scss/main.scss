@@ -148,9 +148,15 @@ $blurb-img-size:100px;
     display: inline-block;
     a.button-download {
       border:none;
-      &:hover {
-        color : $valentina-blue-light
-      }
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: #cacaca;
+  }
+  a:hover {
+    color: white;
+  }      
 
     }
     a.button {
