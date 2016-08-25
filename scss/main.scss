@@ -69,10 +69,10 @@ html {
     color: #000000;
   }
   a:link {
-    color: #000000;
+    color: #ffffff;
   }
   a:visited {
-    color: #cacaca;
+    color: #aaaaaa;
   }
   a:hover {
     color: #FFFFFF;
@@ -151,18 +151,15 @@ $blurb-img-size:100px;
     display: inline-block;
     a.button-download {
       border:none;
-      &:color: {
-      	#000000;
-      }
       &:link {
         color: #000000;
       }
       &:visited {
         color: #cacaca;
-      }
-      &:hover {
-        color: #FFFFFF;
       }      
+      &:hover {
+        color : $valentina-blue-light
+      }
 
     }
     a.button {
