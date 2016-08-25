@@ -152,13 +152,13 @@ $blurb-img-size:100px;
     a.button-download {
       border:none;
       &:link {
-        color: #000000;
+        color: #cacaca;
       }
       &:visited {
-        color: #cacaca;
+        color: #aaaaaa;
       }      
       &:hover {
-        color : $valentina-blue-light
+        color : white;
       }
 
     }
