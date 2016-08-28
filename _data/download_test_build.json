@@ -32,7 +32,7 @@
       "family" : "Linux",
       "bits" : "32/64-bit"
     },    
-        {
+   {
       "type": "Suse",
       "url": "https://software.opensuse.org/download.html?project=home%3Adismine%3Avalentina-unstable&package=valentina",
       "title": "Test OpenSUSE (.rpm)",
@@ -56,7 +56,6 @@
       "family" : "Linux",
       "bits" : "32/64-bit"
     },
-
     {
       "type": "Oldies",
       "url": "http://valentinaproject.bitbucket.org/oldreleases.html",
