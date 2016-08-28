@@ -1,0 +1,27 @@
+<div class="download-zone">
+
+  <p class="download">
+    <a class="more-downloads button button-primary" src="http://valentinaproject.bitbucket.org/index.html#test_build">Download test build</a>
+    <br>
+    <!-- <a class="more-downloads" href="">More Downloads</a> -->
+  </p>
+
+  <ul id="download_test_build">
+    {% for download in site.data.download_test_build.downloads %}
+      <li class="{{download.type}}">
+        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
+          <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
+            
+          <span>{{download.title}}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
+<script>
+  var downloads = {{ site.data.downloads | jsonify }};
+  console.log(downloads);
+
+</script>
