@@ -5,15 +5,31 @@
     <br>
     <!-- <a class="more-downloads" href="">More Downloads</a> -->
   </p>
+  
+ <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Download current release menu
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" id="current_release_dropdown-menu">
+    {% for download in site.data.download_current_release.downloads %}
+      <li class="{{download.type}}">
+        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
+          <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
+            
+          <span>{{download.title}}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+  
   <p class="versions">
     v{{site.valentina_version}}
 
     - <a href="https://bitbucket.org/dismine/valentina/raw/default/ChangeLog.txt">Release notes</a>
 
   </p>
-
-
-  <ul id="downloads">
+  
+  <ul class="dropdown-menu" id="current_release_dropdown-menu">
     {% for download in site.data.download_current_release.downloads %}
       <li class="{{download.type}}">
         <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
@@ -25,8 +41,8 @@
     {% endfor %}
   </ul>
 
-
 </div>
+
 <script>
   var downloads = {{ site.data.download_current_release | jsonify }};
   console.log(downloads);
