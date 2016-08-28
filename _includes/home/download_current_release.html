@@ -14,24 +14,10 @@
       </li>
     {% endfor %}
   </ul>
-</div>
-  
-  <ul class="dropdown-menu" id="current_release_dropdown-menu">
-    {% for download in site.data.download_current_release.downloads %}
-      <li class="{{download.type}}">
-        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
-          <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
-            
-          <span>{{download.title}}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-
+ </div>
+ 
 </div>
 
 <script>
   var downloads = {{ site.data.download_current_release | jsonify }};
-  console.log(downloads);
-
 </script>
