@@ -1,5 +1,13 @@
 {
   "downloads": [
+      {
+      "type": "Windows",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_i386.exe",
+      "title": "Windows (.exe)",
+      "image": "windows.png",
+      "family" : "Windows",
+      "bits" : "32/64-bit"
+    }, 
     {
       "type": "Mac",
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_64bit-OSX.dmg",
@@ -48,14 +56,16 @@
       "title": "Gentoo (.ebuild)",
       "bits" : "32/64-bit"
     },
+    
     {
       "type": "Windows",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_i386.exe",
-      "title": "Windows (.exe)",
-      "image": "windows.png",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0.0a-20160707202846_i386.exe",
+      "title": "Test Windows (.exe)",
+      "image": "test.png",
       "family" : "Windows",
       "bits" : "32/64-bit"
-    },      
+    },     
+     
     { 
       "type": "Mac",
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-20160707202846_64bit-OSX.dmg",
@@ -105,13 +115,14 @@
       "bits" : "32/64-bit"
     },
     {
-      "type": "Windows",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0.0a-20160707202846_i386.exe",
-      "title": "Test Windows (.exe)",
-      "image": "test.png",
-      "family" : "Windows",
+      "type": "Slack",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina-0.4.4.SlackBuild.tar.gz",
+      "title": "Slack",
+      "image": "slack.png",
+      "family" : "Linux",
       "bits" : "32/64-bit"
-    },       
+    },
+            
     {
       "type": "Oldies",
       "url": "http://valentinaproject.bitbucket.org/oldreleases.html",

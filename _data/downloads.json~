@@ -1,5 +1,13 @@
 {
   "downloads": [
+      {
+      "type": "Windows",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_i386.exe",
+      "title": "Windows (.exe)",
+      "image": "windows.png",
+      "family" : "Windows",
+      "bits" : "32/64-bit"
+    }, 
     {
       "type": "Mac",
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_64bit-OSX.dmg",
@@ -48,30 +56,73 @@
       "title": "Gentoo (.ebuild)",
       "bits" : "32/64-bit"
     },
+    
     {
       "type": "Windows",
-      "url": "//bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_i386.exe",
-      "title": "Windows (.exe)",
-      "image": "windows.png",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0.0a-20160707202846_i386.exe",
+      "title": "Test Windows (.exe)",
+      "image": "test.png",
       "family" : "Windows",
       "bits" : "32/64-bit"
-    },      
+    },     
+     
     { 
       "type": "Mac",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-2016052017_64bit-OSX.dmg",
-      "title": "Test v050 Mac OSX (.dmg)",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-20160707202846_64bit-OSX.dmg",
+      "title": "Test Mac OSX (.dmg)",
       "image": "test.png",
       "family" : "Mac",
       "bits" : "64-bit"
     },
     {
-      "type": "Windows",
-      "url": "//bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-20160520174517_i386.exe",
-      "title": "Test v0.5.0 Windows (.exe)",
+      "type": "Ubuntu",
+      "url": "https://code.launchpad.net/~dismine/+archive/ubuntu/valentina-dev",
+      "title": "Test Ubuntu (PPA)",      
       "image": "test.png",
-      "family" : "Windows",
+      "family" : "Linux",
       "bits" : "32/64-bit"
-    },       
+    },
+    {
+      "type": "Debian",
+      "url": "https://software.opensuse.org/download.html?project=home%3Adismine%3Avalentina-unstable&package=valentina",
+      "title": "Test Debian (.deb)",      
+      "image": "test.png",
+      "family" : "Linux",
+      "bits" : "32/64-bit"
+    },    
+        {
+      "type": "Suse",
+      "url": "https://software.opensuse.org/download.html?project=home%3Adismine%3Avalentina-unstable&package=valentina",
+      "title": "Test OpenSUSE (.rpm)",
+      "image": "test.png",
+      "family" : "Linux",      
+      "bits" : "32/64-bit"
+    },
+    {
+      "type": "Fedora",
+      "url": "https://software.opensuse.org/download.html?project=home%3Adismine%3Avalentina-unstable&package=valentina",
+      "title": "Test Fedora (.rpm)",      
+      "image": "test.png",
+      "family" : "Linux",
+      "bits" : "32/64-bit"
+    },    
+    {
+      "type": "Gentoo",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina-0.5.0_alpha.ebuild",
+      "title": "Test Gentoo (.ebuild)",
+      "image": "test.png",
+      "family" : "Linux",
+      "bits" : "32/64-bit"
+    },
+    {
+      "type": "Slack",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina-0.4.4.SlackBuild.tar.gz",
+      "title": "Slack",
+      "image": "slack.png",
+      "family" : "Linux",
+      "bits" : "32/64-bit"
+    },
+            
     {
       "type": "Oldies",
       "url": "http://valentinaproject.bitbucket.org/oldreleases.html",
