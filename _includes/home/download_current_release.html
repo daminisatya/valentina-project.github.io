@@ -1,12 +1,10 @@
 <div class="download-zone">
 
   <p class="download">
-    <a class="more-downloads button button-primary" src="http://valentinaproject.bitbucket.org/index.html#current_release">Download Current Release</a>
+    <a class="more-downloads button button-primary" src="http://valentinaproject.bitbucket.org/index.html#current_release">Download current release</a>
     <br>
     <!-- <a class="more-downloads" href="">More Downloads</a> -->
   </p>
-
-
   <p class="versions">
     v{{site.valentina_version}}
 
@@ -16,7 +14,7 @@
 
 
   <ul id="downloads">
-    {% for download in site.data.downloads.downloads %}
+    {% for download in site.data.download_current_release.downloads %}
       <li class="{{download.type}}">
         <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
           <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
@@ -30,7 +28,7 @@
 
 </div>
 <script>
-  var downloads = {{ site.data.downloads | jsonify }};
+  var downloads = {{ site.data.download_current_release | jsonify }};
   console.log(downloads);
 
 </script>
