@@ -1,22 +1,42 @@
 <div class="download-zone">
 
- <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Download current release menu
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu" id="current_release_dropdown-menu">
-    {% for download in site.data.download_current_release.downloads %}
-      <li class="{{download.type}}">
-        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
-          <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <ul class="dropdown-menu" id="current_release_dropdown-menu">
+      {% for download in site.data.download_current_release.downloads %}
+        <li class="{{download.type}}">
+          <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
+            <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
             
-          <span>{{download.title}}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
- </div>
- 
+            <span>{{download.title}}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
 </div>
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 <script>
   var downloads = {{ site.data.download_current_release | jsonify }};
