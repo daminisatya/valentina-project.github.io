@@ -56,6 +56,14 @@
       "title": "Gentoo (.ebuild)",
       "bits" : "32/64-bit"
     },
+    {
+      "type": "Slack",
+      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina-0.4.4.SlackBuild.tar.gz",
+      "title": "Slack",
+      "image": "slack.png",
+      "family" : "Linux",
+      "bits" : "32/64-bit"
+    },
     
     {
       "type": "Windows",
@@ -114,15 +122,7 @@
       "family" : "Linux",
       "bits" : "32/64-bit"
     },
-    {
-      "type": "Slack",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina-0.4.4.SlackBuild.tar.gz",
-      "title": "Slack",
-      "image": "slack.png",
-      "family" : "Linux",
-      "bits" : "32/64-bit"
-    },
-            
+
     {
       "type": "Oldies",
       "url": "http://valentinaproject.bitbucket.org/oldreleases.html",
