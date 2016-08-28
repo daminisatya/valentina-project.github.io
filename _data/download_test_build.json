@@ -1,70 +1,5 @@
 {
   "downloads": [
-      {
-      "type": "Windows",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_i386.exe",
-      "title": "Windows (.exe)",
-      "image": "windows.png",
-      "family" : "Windows",
-      "bits" : "32/64-bit"
-    }, 
-    {
-      "type": "Mac",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.4.4_64bit-OSX.dmg",
-      "image": "macx.png",
-      "family" : "Mac",
-      "title": "Mac OSX (.dmg)",
-      "bits" : "64-bit"
-    },
-    {
-      "type": "Ubuntu",
-      "url": "https://launchpad.net/~dismine/+archive/ubuntu/valentina",
-      "image": "ubuntu.png",
-      "family" : "Linux",
-      "title": "Ubuntu (PPA)",
-      "bits" : "32/64-bit"
-    },
-    {
-      "type": "Debian",
-      "url": "https://software.opensuse.org/download.html?project=home%3Adismine&package=valentina",
-      "image": "debian.png",
-      "family" : "Linux",
-      "title": "Debian (.deb)",
-      "bits" : "32/64-bit"
-    },
-    {
-      "type": "Suse",
-      "url": "https://software.opensuse.org/download.html?project=home%3Adismine&package=valentina",
-      "image": "suse.png",
-      "family" : "Linux",
-      "title": "OpenSUSE (.rpm)",
-      "bits" : "32/64-bit"
-    },
-    {
-      "type": "Fedora",
-      "url": "https://software.opensuse.org/download.html?project=home%3Adismine&package=valentina",
-      "image": "fedora.png",
-      "family" : "Linux",
-      "title": "Fedora (.rpm)",
-      "bits" : "32/64-bit"
-    },
-    {
-      "type": "Gentoo",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina-0.4.4.ebuild",
-      "image": "gentoo.png",
-      "family" : "Linux",
-      "title": "Gentoo (.ebuild)",
-      "bits" : "32/64-bit"
-    },
-    {
-      "type": "Slack",
-      "url": "https://bitbucket.org/dismine/valentina/downloads/valentina-0.4.4.SlackBuild.tar.gz",
-      "title": "Slack",
-      "image": "slack.png",
-      "family" : "Linux",
-      "bits" : "32/64-bit"
-    },
-    
     {
       "type": "Windows",
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0.0a-20160707202846_i386.exe",
@@ -73,7 +8,6 @@
       "family" : "Windows",
       "bits" : "32/64-bit"
     },     
-     
     { 
       "type": "Mac",
       "url": "https://bitbucket.org/dismine/valentina/downloads/valentina_0.5.0a-20160707202846_64bit-OSX.dmg",
