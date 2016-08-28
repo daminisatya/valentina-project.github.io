@@ -1,0 +1,36 @@
+<div class="download-zone">
+
+  <p class="download">
+    <a class="more-downloads button button-primary" src="http://valentinaproject.bitbucket.org/index.html#current_release">Download Current Release</a>
+    <br>
+    <!-- <a class="more-downloads" href="">More Downloads</a> -->
+  </p>
+
+
+  <p class="versions">
+    v{{site.valentina_version}}
+
+    - <a href="https://bitbucket.org/dismine/valentina/raw/default/ChangeLog.txt">Release notes</a>
+
+  </p>
+
+
+  <ul id="downloads">
+    {% for download in site.data.downloads.downloads %}
+      <li class="{{download.type}}">
+        <a class="button button-download" data-download-type="{{download.type}}" href="{{download.url}}">
+          <img src="/images/logos-white/{{download.image}}" alt="{{download.type}}">
+            
+          <span>{{download.title}}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
+<script>
+  var downloads = {{ site.data.downloads | jsonify }};
+  console.log(downloads);
+
+</script>
